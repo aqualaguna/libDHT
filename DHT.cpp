@@ -399,7 +399,7 @@ bool DHT::read(void)
 	pinMode(m_kSensorPin, INPUT);
 	if (m_bPullupEnabled)
 	{
-		pullup(m_kSensorPin);
+		pinMode(m_kSensorPin,INPUT_PULLUP);
 	}
 	else
 	{
